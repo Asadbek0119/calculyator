@@ -177,9 +177,9 @@ class Calculator {
     calculete () {
     
 
-        const [num1,num2,num3,num4,num5] = display.value.split(this.signView)
-        display.value = eval(num1 + this.signOperator + num2 + this.signOperator + num3 + this.signOperator + num4 + this.signOperator + num5)
-        console.log(num1,num2,num3,num4,num5);
+        const [num1,num2] = display.value.split(this.signView)
+        display.value = eval(num1 + this.signOperator + num2)
+        console.log(num1,num2);
     }
     clear () {
         display.value = null
